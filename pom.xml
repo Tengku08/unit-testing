@@ -17,6 +17,8 @@
 	<properties>
 		<java.version>17</java.version>
 		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+		<maven.compiler.source>1.8</maven.compiler.source>
+    		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -114,6 +116,7 @@
 		<testSourceDirectory>${project.basedir}/src/test/java</testSourceDirectory>
 		<finalName>${project.artifactId}</finalName>
 		<plugins>
+			
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
@@ -133,6 +136,15 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugins>
+			    <plugin>    
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+				    <source>1.8</source>
+				    <target>1.8</target>
+				</configuration>
+			    </plugin>
+			</plugins>
 
 			<plugin>
 				<groupId>org.jacoco</groupId>
