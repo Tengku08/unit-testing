@@ -16,8 +16,7 @@
 	<description>sample-project</description>
 	<properties>
 		<java.version>11</java.version>
-		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
-		<maven.compiler.release>11</maven.compiler.release>
+		<maven.compiler.release>17</maven.compiler.release>
 	</properties>
 	<dependencies>
 		<dependency>
