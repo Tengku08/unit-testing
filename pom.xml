@@ -136,16 +136,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugins>
-			    <plugin>    
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-				    <source>1.8</source>
-				    <target>1.8</target>
-				</configuration>
-			    </plugin>
-			</plugins>
-
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
