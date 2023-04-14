@@ -1,9 +1,0 @@
-spring:
-  cloud:
-    config:
-      fail-fast: true
-      label: DEVELOPMENT
-      name: sample-project
-      uri: http://eai-config-server:8080
-      profile: ocp-dev
-
